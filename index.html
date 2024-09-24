@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
 
     <!-- Font: Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,8 +47,8 @@
     <header class="container mx-auto">
         <!-- nav section start  -->
         <nav class="p-4 sm:p-6 lg:p-10">
-            <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around md:justify-between md:px-6 sm:pb-8">
-                <a class="btn text-xl bg-buttonColor">Blog</a>
+            <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around sm:justify-around md:px-6 sm:pb-8">
+                <a href="/blog.html" class="btn text-xl bg-buttonColor">Blog</a>
 
                 <div class="flex gap-3">
                     <img src="assets/logo.png" alt="">
@@ -58,7 +58,7 @@
 
                 <div>
                     <img src="assets/coin.png" alt="">
-                    <h2>500 BDT</h2>
+                    <h2><span id="current-amount">500</span>&nbsp;BDT</h2>
                 </div>
 
               </div>
@@ -67,8 +67,8 @@
 
         <!-- Donation and history section start -->
         <div class="flex justify-center gap-4">
-            <button class="btn bg-buttonColor">Donation</button>
-            <button class="btn btn-outline  border-buttonColor2 text-secondary">History</button>
+            <a href="index.html" class="btn bg-buttonColor">Donation</a>
+            <a href="history.html" id="history-button-on-click" class="btn btn-outline  border-buttonColor2 text-secondary">History</a>
         </div>
         <!-- Donation and history section end -->
 
@@ -81,32 +81,104 @@
             <div class="bg-base-100 shadow-xl flex flex-col sm:flex-row  sm:p-10">
                 <figure class="flex-1 flex object-cover p-2 sm:p-8 sm:pr-4 ">
                   <img
-                    src="assets/feni.png"
+                    src="assets/noakhali.png"
                     alt="Movie" />
                 </figure>
                 <div class="flex-1  p-2 sm:p-8 sm:pl-4">
 
-                    <div class="flex gap-2 bg-buttonColor2 w-28 p-2 rounded-md">
+                    <div class="flex gap-2 bg-buttonColor2 w-fit p-2 rounded-md">
                         <img src="assets/coin.png" alt="">
-                        <h2 class="">500 BDT</h2>
+                        <h2><span id="noakhali-total-donation">500</span>&nbsp;BDT</h2>
                     </div>
 
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
 
-                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <p class="pb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                    <input type="text" placeholder="Write Donation Amount">
 
-                    <div class="card-actions justify-end">
-                        <button class="btn w-full mx-auto bg-buttonColor">Donate Now</button>
+                    <input id="noakhali-input-field" type="number"placeholder="Write Donation Amount"class="border-buttonColor2 input input-bordered input-primary w-full"/>
+
+                    <div class="card-actions justify-end pt-4">
+                        <button id="donate-noakhali-btn" class="btn w-full mx-auto bg-buttonColor">Donate Now</button>
                     </div>
                 </div>
             </div>
 
          </div>
+        <!-- box 1 end  -->
+
+        <!-- box 2  -->
+        <div>
+        <div class="bg-base-100 shadow-xl flex flex-col sm:flex-row  sm:p-10">
+            <figure class="flex-1 flex object-cover p-2 sm:p-8 sm:pr-4 ">
+                <img
+                src="assets/feni.png"
+                alt="Movie" />
+            </figure>
+            <div class="flex-1  p-2 sm:p-8 sm:pl-4">
+
+                <div class="flex gap-2 bg-buttonColor2 w-fit p-2 rounded-md">
+                    <img src="assets/coin.png" alt="">
+                    <h2><span id="feni">500</span>&nbsp;BDT</h2>
+                   
+                </div>
+
+                <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+
+                <p class="pb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+
+                <input id="feni-input-field" type="number"placeholder="Write Donation Amount"class="border-buttonColor2 input input-bordered input-primary w-full"/>
+
+                <div class="card-actions justify-end pt-4">
+                    <button id="feni-input-btn" class="btn w-full mx-auto bg-buttonColor">Donate Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- box 2 end  -->
+
+
+        <!-- box 3  -->
+        <div>
+            <div class="bg-base-100 shadow-xl flex flex-col sm:flex-row  sm:p-10">
+                <figure class="flex-1 flex object-cover p-2 sm:p-8 sm:pr-4 ">
+                    <img
+                    src="assets/quota-protest.png"
+                    alt="Movie" />
+                </figure>
+                <div class="flex-1  p-2 sm:p-8 sm:pl-4">
+
+                    <div class="flex gap-2 bg-buttonColor2 w-fit p-2 rounded-md">
+                        <img src="assets/coin.png" alt="">
+
+                        <h2><span id="aid">500</span>&nbsp;BDT</h2>
+                    </div>
+
+                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+
+                    <p class="pb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+
+                    <input id="aid-input-field" type="number"placeholder="Write Donation Amount"class="border-buttonColor2 input input-bordered input-primary w-full"/>
+
+                    <div class="card-actions justify-end pt-4">
+                        <button id="aid-input-btn" class="btn w-full mx-auto bg-buttonColor">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- box 3 end  -->
+
+        </div>
+
+
+        </div>
 
     </main>
-        <!-- main section end  -->
+    <!-- main section end  -->
+
+    <!-- js file link  -->
+    <script src="script.js"></script>
+    <script src="history.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,93 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#111111',
+                    secondary: 'rgba(17, 17, 17, 0.7)',
+                    nav: '#F9F7F3',
+                    body: '#FFFFFF',
+                    buttonColor: '#B4F461',
+                    buttonColor2: 'rgba(17, 17, 17, 0.3)',
+                },
+                fontFamily: {
+                    RaleWay: 'Raleway',
+                    Inter: 'Inter',
+                },
+            },
+        },
+    }
+</script>
+<body class="">
+    <!-- fixed top-0 z-10 w-full  bg-[#FBFBFB] py-2 shadow-md lg:py-4 -->
+    <header class="container mx-auto sticky top-0 z-10">
+        <!-- nav section start  -->
+         <div class="  w-full  bg-[#FBFBFB] py-2 shadow-md lg:py-4">
+            <nav class="p-4 sm:p-6 lg:p-10 pt-0">
+                <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around md:justify-between md:px-6 sm:pb-8">
+                    <a href="/index.html" class="btn text-xl bg-buttonColor">Home</a>
+    
+                    <div class="flex gap-3">
+                        <img src="assets/logo.png" alt="">
+                        
+                        <h1>Donate Bangladesh</h1>
+                    </div>
+    
+                    <div>
+                        <img src="assets/coin.png" alt="">
+                        <h2><span id="current-amount">500</span>&nbsp;BDT</h2>
+                    </div>
+    
+                  </div>
+            </nav>
+            <!-- nav section end  -->
+    
+            <!-- Donation and history section start -->
+            <div class="flex justify-center gap-4 ">
+                <a href="index.html" class="btn bg-buttonColor">Donation</a>
+                <a href="index.html" class="btn btn-outline  border-buttonColor2 text-secondary">History</a>
+            </div>
+            <!-- Donation and history section end -->
+         </div>
+
+
+    </header>
+    <main class="container mx-auto">   
+        <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+                <input type="text" placeholder="Type here" class="input input-ghost w-full max-w-xs" />
+              <p>hello</p>
+            </div>
+          </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="history.js"></script>
+
+</body>
+
+</html>

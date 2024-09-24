@@ -1,0 +1,105 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <!-- Font: Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Railway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Link: Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
+
+    <!-- dsisy ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111111',
+                        secondary: 'rgba(17, 17, 17, 0.7)',
+                        nav: '#F9F7F3',
+                        body: '#FFFFFF',
+                        buttonColor: '#B4F461',
+                        buttonColor2: 'rgba(17, 17, 17, 0.3)',
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                        Inter: 'Inter',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- nav section start  -->
+        <nav class="p-4 sm:p-6 lg:p-10">
+            <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around md:justify-between md:px-6 sm:pb-8">
+                <a href="blog.html" id="blog-button-on-click" class="btn text-xl bg-buttonColor">Blog</a>
+
+                <div class="flex gap-3">
+                    <img src="assets/logo.png" alt="">
+                    
+                    <h1>Donate Bangladesh</h1>
+                </div>
+
+                <div>
+                    <img src="assets/coin.png" alt="">
+                    <h2><span id="current-amount">500</span>&nbsp;BDT</h2>
+                </div>
+
+              </div>
+        </nav>
+        <!-- nav section end  -->
+        <!-- Donation and history section start -->
+            
+
+        <div class="flex justify-center gap-4">
+            <a href="index.html" id="donation-button-on-click" class="btn bg-buttonColor">Donation</a>
+            <a href="history.html" class="btn btn-outline  border-buttonColor2 text-secondary">History</a>
+        </div>
+        <!-- Donation and history section end -->
+
+
+
+        <!-- hostory content box end  -->
+        
+
+    </header>
+    <!-- hostory content box start  -->
+    <main class="container mx-auto pt-10 p-4 sm:p-6 lg:p-10">
+
+            <div class="mx-auto ">
+                <div class="shadow-md p-4">
+                    <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+                </div>
+                <div class="shadow-md p-4">
+                    <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+                </div>
+                <div class="shadow-md p-4">
+                    <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+                </div>
+            </div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="history.js"></script>
+</body>
+</html>
