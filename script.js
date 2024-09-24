@@ -75,12 +75,12 @@ document.getElementById('history-button-on-click').addEventListener('click',func
 
 document.getElementById('donation-button-on-click').addEventListener('click',function(){
     // window.location.href ='/history.html';
-    document.getElementById('donation-main-section').classList.remove('hidden')
+    document.getElementById('donation-main-section').classList.remove('hidden','sticky','top-0','z-10')
     document.getElementById("history-section").classList.add('hidden');
 
 
 
-});
+}); 
 
 
 // document.getElementById('feni-input-btn').addEventListener('click',function(){  
@@ -270,7 +270,7 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
 
         console.log(`Noakhali Donation: ${x}, Total Donation: ${noakhaliTotalDonation}, Current Amount: ${currentAmount}`);
 
-        // Log the donation in the history
+
         function getFormattedDateTime() {
             const now = new Date();
             return now.toString(); //
@@ -290,8 +290,11 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
             </div>`;
         console.log(div);
 
-        // Append the new entry to the history container
         document.getElementById('t-container').appendChild(div);
+        showModal(`You donated ${x} Taka for HumanKind`);
+        document.getElementById('aid-input-field').value = '';
+
+
     } else if (x <= 0) {
         alert("Please enter a valid donation amount.");
     } else if (currentAmount < x) {
@@ -339,6 +342,8 @@ document.getElementById('feni-input-btn').addEventListener('click', function(eve
             </div>`;
         console.log(div);
         document.getElementById('t-container').appendChild(div);
+        showModal(`You donated ${x} Taka for HumanKind`);
+        document.getElementById('aid-input-field').value = '';
 
     } else {
         console.log("Insufficient funds or invalid donation amount");
@@ -380,15 +385,17 @@ document.getElementById('aid-input-btn').addEventListener('click', function(even
         div.classList.add('shadow-md', 'p-4');
         div.innerHTML = `
             <div>
-                <h3 class="text-2xl font-bold">${x} Taka is Donated for Quota Movement - ${year} at Feni, Bangladesh</h3>
+                <h3 class="text-2xl font-bold">${x} Taka Aid for Injured in the  Movement - ${year} From Feni, Bangladesh</h3>
                 <p>Date: ${getFormattedDateTime()}</p>
             </div>`;
         console.log(div);
 
         document.getElementById('t-container').appendChild(div);
         showModal(`You donated ${x} Taka for HumanKind`);
+        document.getElementById('aid-input-field').value = '';
 
     } else if (x <= 0) {
+        
         alert("Please enter a valid donation amount.");
     } else if (currentAmount < x) {
         alert("Donation amount exceeds available balance.");
@@ -398,6 +405,7 @@ document.getElementById('aid-input-btn').addEventListener('click', function(even
 
 
 function showModal(message) {
+    
     const modal = document.getElementById('success-modal');
     const modalMessage = document.getElementById('modal-message');
 
