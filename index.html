@@ -42,7 +42,7 @@
 
 </head>
 <body>
-    <header id="header1" class="container mx-auto ">
+    <header id="header1" class="container mx-auto  bg-body">
         <!-- nav section start  -->
         <nav class="p-4 sm:p-6 lg:p-10">
             <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around sm:justify-around md:px-6 sm:pb-8">
@@ -64,7 +64,7 @@
         <!-- nav section end  -->
 
         <!-- Donation and history section start -->
-        <div class="flex justify-center gap-4">
+        <div class="flex justify-center gap-4 bg-body">
             <button id="donation-button-on-click" class="btn bg-buttonColor">Donation</button>
             <button id="history-button-on-click" class="btn btn-outline  border-buttonColor2 text-secondary">History</button>
         </div>
@@ -175,7 +175,7 @@
     <div id="history-section" class="container mx-auto pt-10 p-4 sm:p-6 lg:p-10 hidden">
 
         <div class="mx-auto ">
-            <div class="shadow-md p-4 history-box">
+            <!-- <div class="shadow-md p-4 history-box">
                 <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                 <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
             </div>
@@ -186,11 +186,23 @@
             <div class="shadow-md p-4">
                 <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                 <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
-            </div>
+            </div> -->
             <div id="t-container" class="">
 
             </div>
 
+        </div>
+    </div>
+
+    <!-- modal section  -->
+
+    <div id="success-modal" class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 p-4 rounded-2xl">
+        <div class="bg-body p-6 rounded shadow-lg text-center">
+            <h2 class="text-2xl font-extrabold">Congrates!</h2>
+            <img class="inline" src="assets/coin.png" alt="">
+            <p id="modal-message"></p>
+            <p class="text-xl font-bold">Successfully</p>
+            <button id="modal-close-btn" class="mt-4 px-4 py-2 bg-buttonColor2 rounded">Close confirmation</button>
         </div>
     </div>
 
