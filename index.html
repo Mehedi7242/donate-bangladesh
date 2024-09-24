@@ -15,8 +15,6 @@
     <!-- Font Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- Link: Fontawesome CDN -->
-    <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
 
     <!-- dsisy ui link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -44,7 +42,7 @@
 
 </head>
 <body>
-    <header class="container mx-auto">
+    <header id="header1" class="container mx-auto ">
         <!-- nav section start  -->
         <nav class="p-4 sm:p-6 lg:p-10">
             <div class="navbar bg-nav flex flex-col gap-4 sm:flex-row lg:justify-around sm:justify-around md:px-6 sm:pb-8">
@@ -67,15 +65,16 @@
 
         <!-- Donation and history section start -->
         <div class="flex justify-center gap-4">
-            <a href="index.html" class="btn bg-buttonColor">Donation</a>
-            <a href="history.html" id="history-button-on-click" class="btn btn-outline  border-buttonColor2 text-secondary">History</a>
+            <button id="donation-button-on-click" class="btn bg-buttonColor">Donation</button>
+            <button id="history-button-on-click" class="btn btn-outline  border-buttonColor2 text-secondary">History</button>
         </div>
         <!-- Donation and history section end -->
 
     </header>
 
+    
     <!-- main section start  -->
-    <main class="container mx-auto pt-10 p-4 sm:p-6 lg:p-10">
+    <main id="donation-main-section" class="container mx-auto pt-10 p-4 sm:p-6 lg:p-10 ">
         <!-- box 1  -->
          <div>
             <div class="bg-base-100 shadow-xl flex flex-col sm:flex-row  sm:p-10">
@@ -170,10 +169,34 @@
 
         </div>
 
-
         </div>
 
     </main>
+    <div id="history-section" class="container mx-auto pt-10 p-4 sm:p-6 lg:p-10 hidden">
+
+        <div class="mx-auto ">
+            <div class="shadow-md p-4 history-box">
+                <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+            </div>
+            <div class="shadow-md p-4">
+                <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+            </div>
+            <div class="shadow-md p-4">
+                <h3 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>    
+            </div>
+            <div id="t-container" class="">
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
     <!-- main section end  -->
 
     <!-- js file link  -->
