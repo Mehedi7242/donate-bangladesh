@@ -36,6 +36,7 @@ document.getElementById('donate-noakhali-btn').addEventListener('click',function
     currentAmount = sub(currentAmount,x)
     document.getElementById('current-amount').innerText = currentAmount;
     console.log(add(noakhaliTotalDonation , x))
+    
 
     
 })
@@ -60,7 +61,7 @@ document.getElementById('aid-input-btn').addEventListener('click',function(event
     currentAmount = sub(currentAmount,x)
     document.getElementById('current-amount').innerText = currentAmount
     console.log(add(aidTotalDonation , x))
-
+    
 })
 
 // history and donation tab button 
@@ -89,6 +90,7 @@ document.getElementById('donation-button-on-click').addEventListener('click',fun
 //     document.getElementById('t-container').appendChild(p);
 // })
 
+// noakhali history 
 document.getElementById('donate-noakhali-btn').addEventListener('click',function(){  
     
     function getFormattedDateTime() {
@@ -106,12 +108,68 @@ document.getElementById('donate-noakhali-btn').addEventListener('click',function
     div.classList.add('shadow-md' ,'p-4')
     div.innerHTML = `
                 <div>
-                <h3 class="text-2xl font-bold">${x} Taka is Donated for famine-${year} at Feni, Bangladesh</h3>
+                <h3 class="text-2xl font-bold">${x} Taka is Donated for Flood Relief -${year} at Noakhali, Bangladesh</h3>
                 <p>Date : ${dateTime}</p>    
             </div>`
     console.log(div);
     document.getElementById('t-container').appendChild(div);
 })
+
+// feni history 
+document.getElementById('feni-input-btn').addEventListener('click',function(){  
+    
+    function getFormattedDateTime() {
+        const now = new Date(); 
+    
+        return  dateTime = now.toString(); 
+    }
+    const d = new Date();
+    let year = d.getFullYear();
+
+    console.log(getFormattedDateTime());
+    
+    const div = document.createElement('div')
+    const x = parseFloat(document.getElementById('noakhali-input-field').value)
+    div.classList.add('shadow-md' ,'p-4')
+    div.innerHTML = `
+                <div>
+                <h3 class="text-2xl font-bold">${x} Taka is Donated for Flood Relief ${year} at Feni, Bangladesh</h3>
+                <p>Date : ${dateTime}</p>    
+            </div>`
+    console.log(div);
+    document.getElementById('t-container').appendChild(div);
+})
+
+
+
+// feni history 
+document.getElementById('aid-input-btn').addEventListener('click',function(){  
+    
+    function getFormattedDateTime() {
+        const now = new Date(); 
+    
+        return  dateTime = now.toString(); 
+    }
+    const d = new Date();
+    let year = d.getFullYear();
+
+    console.log(getFormattedDateTime());
+    
+    const div = document.createElement('div')
+    const x = parseFloat(document.getElementById('noakhali-input-field').value)
+    div.classList.add('shadow-md' ,'p-4')
+    div.innerHTML = `
+                <div>
+                <h3 class="text-2xl font-bold">${x} Taka is Donated for  Quota Movement-${year} at Feni, Bangladesh</h3>
+                <p>Date : ${dateTime}</p>    
+            </div>`
+    console.log(div);
+    document.getElementById('t-container').appendChild(div);
+})
+
+
+
+
 
 
 
