@@ -130,51 +130,101 @@ document.getElementById('feni-input-btn').addEventListener('click', function(eve
 
 
 
+// document.getElementById('aid-input-btn').addEventListener('click', function(event) {
+//     const x = parseFloat(document.getElementById('aid-input-field').value);
+
+//     if (x > 0 && currentAmount >= x) {
+//         console.log(x);
+//         aidTotalDonation = add(aidTotalDonation, x);
+
+
+//         document.getElementById('aid').innerText = aidTotalDonation;
+
+
+//         currentAmount = sub(currentAmount, x);
+//         document.getElementById('current-amount').innerText = currentAmount;
+
+//         console.log(`Aid Donation: ${x}, Total Aid Donation: ${aidTotalDonation}, Current Amount: ${currentAmount}`);
+
+
+//         function getFormattedDateTime() {
+//             const now = new Date();
+//             return now.toString(); 
+//         }
+
+//         const d = new Date();
+//         let year = d.getFullYear();
+
+//         const div = document.createElement('div');
+//         div.classList.add('shadow-md', 'p-4');
+//         div.innerHTML = `
+//             <div>
+//                 <h3 class="text-2xl font-bold">${x} Taka Aid for Injured in the  Movement - ${year} From Feni, Bangladesh</h3>
+//                 <p>Date: ${getFormattedDateTime()}</p>
+//             </div>`;
+//         console.log(div);
+
+//         document.getElementById('t-container').appendChild(div);
+//         showModal(`You donated ${x} Taka for HumanKind`);
+//         document.getElementById('aid-input-field').value = '';
+
+//     } else if (x <= 0) {
+        
+//         alert("Please enter a valid donation amount.");
+//     } else if (currentAmount < x) {
+//         alert("Donation amount exceeds available balance.");
+//     }
+// });
+
+
+
+
 document.getElementById('aid-input-btn').addEventListener('click', function(event) {
     const x = parseFloat(document.getElementById('aid-input-field').value);
 
-    if (x > 0 && currentAmount >= x) {
+    if (x > 0 && currentAmount >= x) { 
         console.log(x);
         aidTotalDonation = add(aidTotalDonation, x);
 
-
         document.getElementById('aid').innerText = aidTotalDonation;
-
 
         currentAmount = sub(currentAmount, x);
         document.getElementById('current-amount').innerText = currentAmount;
 
-        console.log(`Aid Donation: ${x}, Total Aid Donation: ${aidTotalDonation}, Current Amount: ${currentAmount}`);
-
 
         function getFormattedDateTime() {
             const now = new Date();
-            return now.toString(); 
+            return now.toString(); //
         }
 
         const d = new Date();
         let year = d.getFullYear();
 
+
         const div = document.createElement('div');
         div.classList.add('shadow-md', 'p-4');
         div.innerHTML = `
             <div>
-                <h3 class="text-2xl font-bold">${x} Taka Aid for Injured in the  Movement - ${year} From Feni, Bangladesh</h3>
+                <h3 class="text-2xl font-bold">${x} Taka Aid for Injured in the  Movement - ${year} at Noakhali, Bangladesh</h3>
                 <p>Date: ${getFormattedDateTime()}</p>
             </div>`;
-        console.log(div);
 
         document.getElementById('t-container').appendChild(div);
         showModal(`You donated ${x} Taka for HumanKind`);
-        document.getElementById('aid-input-field').value = '';
+
+
 
     } else if (x <= 0) {
-        
         alert("Please enter a valid donation amount.");
     } else if (currentAmount < x) {
         alert("Donation amount exceeds available balance.");
     }
 });
+
+
+
+
+
 
 
 
